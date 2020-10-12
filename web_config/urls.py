@@ -16,8 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from restapi import views as restapiview
+from hello import views as helloview
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',restapiview.home, name='home'),
+    path('api',restapiview.home, name='home'),
+    path('hello', helloview.hello, name='hello_home'),
+    path('', helloview.home, name='home1'),
+    path('home', helloview.home),
+    path('hello/responsewithhtml/', helloview.responsewithhtml),
+    path('hello/form/', helloview.form, name='helloform'),
 ]
