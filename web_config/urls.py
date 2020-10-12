@@ -26,4 +26,5 @@ urlpatterns = [
     path('home', helloview.home),
     path('hello/responsewithhtml/', helloview.responsewithhtml),
     path('hello/form/', helloview.form, name='helloform'),
+    path('hello/template', helloview.template, name='template'),
 ]
