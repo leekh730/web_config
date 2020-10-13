@@ -21,7 +21,7 @@ from board import views as boardview
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api',restapiview.home, name='home'),
+    path('api', restapiview.home, name='home'),
     path('hello', helloview.hello, name='hello_home'),
     path('', helloview.home, name='home1'),
     path('home', helloview.home),
