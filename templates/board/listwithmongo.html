@@ -1,6 +1,9 @@
-<table class='table table-striped'>
-    <tr> <th>title</th> <th>links</th> </tr>
-    {% for row in page_obj.0%}
-    <tr> <td>{{row.title}}</td> <td>{{row.link}}</td> </tr>
-    {% endfor %}
-</table>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<div class='container'>
+    <table class='table table-striped'>
+        <tr> <th>title</th> <th>links</th> </tr>
+        {% for row in page_obj.0%}
+        <tr> <td>{{row.title}}</td> <td>{{row.link}}</td> </tr>
+        {% endfor %}
+    </table>
+</div>

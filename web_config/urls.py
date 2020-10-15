@@ -29,4 +29,5 @@ urlpatterns = [
     path('hello/form/', helloview.form, name='helloform'),
     path('hello/template', helloview.template, name='template'),
     path('board/listwithmongo/', boardview.listwithmongo),
+    path('board/listwithmongowithpaginator/', boardview.listwithmongowithpaginator),
 ]
