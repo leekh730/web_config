@@ -18,7 +18,7 @@ from django.urls import path
 from restapi import views as restapiview
 from hello import views as helloview
 from board import views as boardview
-
+from maps import views as mapsview
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api', restapiview.home, name='home'),
@@ -30,4 +30,5 @@ urlpatterns = [
     path('hello/template', helloview.template, name='template'),
     path('board/listwithmongo/', boardview.listwithmongo),
     path('board/listwithmongowithpaginator/', boardview.listwithmongowithpaginator),
+    path('maps/showmapwithfolium', mapsview.showmapwithfolium, name='show_map'),
 ]
